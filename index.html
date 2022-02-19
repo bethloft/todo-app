@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Happy Listing</title>
+        <link rel="icon" href="https://cdn.glitch.me/f961eba8-228f-46a7-a1bc-a4b0b7dc17e2%2Ffavicon.ico" >
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body>
+        <header> 
+            <h1>The busy girl's guide to being orderly</h1>
+        </header>
+        <main>
+            <label class="new">
+                <input type="text" placeholder="Not another thing?!" class="new-input" id="new"/>
+                <button class="new-button" id="add" disabled>Add</button>
+                <span class="new-label">Add new item</span>
+            </label>
+            
+            <ul class="items" id="tasks">
+            </ul>
+        </main>
+
+        <template id="taskTemplate">
+            <li class="item">
+            <input type="checkbox" class="item-check"/>
+            <span class="item-text"></span>
+            <button class="delete">never mind</button>
+            </li>
+        </template>
+        
+        <script src="script.js" defer></script>
+    </body>
+</html>
